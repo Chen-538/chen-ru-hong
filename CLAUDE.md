@@ -14,6 +14,11 @@
 - `_refs/project-details.html`：取消的 8 個作品內頁全文，`main.before-plain-rows.js`、`style.before-plain-rows.css` 是取消前的版本。
 - `_preview/`：選風格時的 4 個樣張，約 84 MB，不部署。
 
+## 線上
+- GitHub：https://github.com/Chen-538/chen-ru-hong（公開）
+- 網站：https://chen-538.github.io/chen-ru-hong/（GitHub Pages，main 分支根目錄）
+- 改完 commit 推上 main 就會更新，約 1 分鐘。
+
 ## 本機預覽
 `python -m http.server 8933 --bind 127.0.0.1`，開 `http://127.0.0.1:8933/`。
 
@@ -31,7 +36,7 @@ v1 完成並依使用者回饋改過五輪，只在本機，未部署。最後�
 翻頁、方塊轉場與數字跳動已隨內容移除，目前只有攝影大圖用光圈轉場。
 
 ## 2026-11-12 加上
-- 分享預覽：og 標籤、`assets/og.jpg`（1200×630）、小圖示。部署後 `og:image` 要改成完整網址。
+- 分享預覽：og 標籤、`assets/og.jpg`（1200×630）、小圖示。
 - 其他作品 5 項純文字（貼圖、Claude Code 教學、股票平台、工作流啟動器、AI 影片管線），放在作品列表下方。
 - 23:59 星點粒子（Three.js），捲近才載入，滑鼠可推開。
 - 木工音效開關，預設關閉。

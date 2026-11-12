@@ -50,7 +50,7 @@ Re-read this file before generating any new component.
 
 Three.js 只在捲到 23:59 前 1200px 才載入；減少動態或沒有 WebGL 就不載。改 `stars.js` 後把 `main.js` 裡 `stars.js?v=N` 加一，否則瀏覽器會用舊檔。
 
-分享預覽 `og:image` 目前是相對路徑，部署後要改成完整網址（https://網域/assets/og.jpg），LINE 和 FB 才抓得到。圖由 `tools/build_extras.py` 產生。
+分享預覽 `og:image` 用完整網址 https://chen-538.github.io/chen-ru-hong/assets/og.jpg；換網域時要一起改 `og:url`。圖由 `tools/build_extras.py` 產生。
 
 ## Banned
 - 可見文字不用破折號。
