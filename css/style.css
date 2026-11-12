@@ -51,7 +51,7 @@ h3{font-size:20px;margin-bottom:12px}
 .js #intro{display:flex}
 
 /* 固定元素 */
-.top-name,.top-cta{position:fixed;top:18px;z-index:30;font-family:var(--hand);font-size:22px;text-decoration:none;color:var(--ink)}
+.top-name,.top-cta{position:absolute;top:18px;z-index:30;font-family:var(--hand);font-size:22px;text-decoration:none;color:var(--ink)}
 .top-name{left:var(--gutter)}
 .top-cta{right:var(--gutter);font-family:var(--body);font-size:15px;line-height:1;padding:10px 16px;border:1px solid currentColor;border-radius:99px;transition:background .16s,color .16s}
 .top-cta:hover{background:var(--ink);color:var(--bg)}
@@ -143,8 +143,6 @@ h1{font-size:clamp(84px,15vw,224px);line-height:1.05;letter-spacing:.02em}
 .others .row{grid-template-columns:1fr 2fr;gap:24px;padding:16px 8px}
 .others strong{font-size:clamp(20px,1.8vw,24px)}
 .others .d{grid-column:auto;margin:0}
-.sound{font-size:15px;line-height:1;padding:11px 16px;border-radius:99px;border:1px solid currentColor;transition:background .16s,color .16s}
-.sound[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 #bye{overflow:hidden}
 #stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .works .n,.works .t,.works .s{font:500 14px var(--mono)}

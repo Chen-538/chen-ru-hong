@@ -1,5 +1,5 @@
-"""分享預覽圖、小圖示、木工音效。重跑會覆蓋輸出。"""
-import os, subprocess
+"""分享預覽圖、小圖示。重跑會覆蓋輸出。"""
+import os
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,11 +30,4 @@ for size, name in [(64, 'favicon.png'), (180, 'apple-touch-icon.png')]:
     r = s * 0.25
     ImageDraw.Draw(im).ellipse((s / 2 - r, s / 2 - r, s / 2 + r, s / 2 + r), fill=SUN)
     im.resize((size, size), Image.LANCZOS).save(ROOT + '/assets/' + name)
-
-# 木工音效：Kenney impact-sounds（CC0），轉 mp3 讓 Safari 也能播
-os.makedirs(ROOT + '/assets/sfx', exist_ok=True)
-SRC = 'D:/claude專案/tools/kenney/impact-sounds/Audio/'
-for i in range(3):
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{SRC}impactWood_light_00{i}.ogg',
-                    '-ac', '1', '-b:a', '64k', f'{ROOT}/assets/sfx/wood-{i}.mp3'], check=True)
-print('og', og.size, 'sfx', sorted(os.listdir(ROOT + '/assets/sfx')))
+print('og', og.size)

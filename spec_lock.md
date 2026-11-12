@@ -40,9 +40,8 @@ Re-read this file before generating any new component.
 | 游標 | 12px 白點＋40px 外圈，difference；任何地方都不顯示文字 |
 | 手繪線 | rough-notation 800ms，#F0541E，strokeWidth 2.5 |
 | 23:59 星點 | `js/stars.js`：me-mrt.webp 取樣（桌機 150 欄、手機 96 欄），亮度 ≥ .3 才成點，邊緣隨機淡出；`#bye` top 85%→15% 聚合；滑鼠 80px 內推開；桌機放右側 25%，手機置中且畫布 opacity .5 |
-| 木工音效 | Kenney impactWood_light 三聲轉 mp3，音量 .5，預設關，按鈕切換 |
 
-`prefers-reduced-motion`：無片頭、無平滑捲動、無游標、無粒子、無星點，換頁立即切換。音效開關仍可用。天色仍會變，因為那是資訊。
+`prefers-reduced-motion`：無片頭、無平滑捲動、無游標、無粒子、無星點，換頁立即切換。天色仍會變，因為那是資訊。
 
 攝影區不用捲動鎖定（pin）：往下滑直接經過，看照片用箭頭、滑桿或手指左右滑。
 

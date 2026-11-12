@@ -173,22 +173,6 @@
   }
   if (!reduce) addEventListener('pointerdown', e => burst(e.clientX, e.clientY, !!e.target.closest?.('#wood')));
 
-  /* 木工音效：預設關閉，打開後在木工段點擊會有敲木頭聲 */
-  const soundBtn = $('#woodSound');
-  let sounds = null;
-  soundBtn.addEventListener('click', () => {
-    const on = soundBtn.getAttribute('aria-pressed') !== 'true';
-    soundBtn.setAttribute('aria-pressed', on);
-    soundBtn.textContent = '木工音效：' + (on ? '開' : '關');
-    if (on && !sounds) sounds = [0, 1, 2].map(i => Object.assign(new Audio(`assets/sfx/wood-${i}.mp3`), { volume: .5, preload: 'auto' }));
-  });
-  $('#wood').addEventListener('pointerdown', e => {
-    if (!sounds || soundBtn.getAttribute('aria-pressed') !== 'true' || e.target === soundBtn) return;
-    const a = sounds[Math.floor(Math.random() * sounds.length)].cloneNode();
-    a.volume = .5;
-    a.play().catch(() => {});
-  });
-
   /* 23:59 星點：捲近才載入 Three.js，減少動態或沒有 WebGL 就不載 */
   const starCanvas = $('#stars');
   const hasGL = (() => { try { return !!document.createElement('canvas').getContext('webgl'); } catch { return false; } })();
