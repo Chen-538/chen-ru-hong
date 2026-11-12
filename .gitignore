@@ -1,0 +1,9 @@
+# 選風格時的樣張，約 84 MB，不進版本庫
+_preview/
+# 本機工作備份與參考
+_refs/
+.playwright-mcp/
+tools/_chars.txt
+tools/_copy.txt
+__pycache__/
+*.jpg.tmp
