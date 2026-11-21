@@ -49,7 +49,7 @@ v1 完成並依使用者回饋改過五輪，只在本機，未部署。最後�
 待決定：網域與主機。
 
 ## 同步
-進度同步到 Obsidian `C:\Users\USER\ObsidianVault\個人網站製作.md`。寫 `claude/` 底下的專案筆記時用同一份內容，不要另開一份。
+進度同步到 Obsidian `C:\Users\USER\ObsidianVault\claude\我的個人資料\個人網站製作.md`（2026-11-21 發現已從 vault 根目錄搬到這裡）。寫 `claude/` 底下的專案筆記時用同一份內容，不要另開一份。
 
 ## 待辦完成紀錄（專案總覽）
 
